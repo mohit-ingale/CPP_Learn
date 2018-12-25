@@ -1,5 +1,5 @@
 /*
-@Hello World Example
+@Static Cast Example and Use
 @Created on Tue Dec 25 18:02:54 2018
 @author: Mohit Ingale
 */
