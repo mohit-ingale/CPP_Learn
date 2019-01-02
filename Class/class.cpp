@@ -14,7 +14,7 @@ class testObj
         {
             cout << "Data = " << pdata << endl;
         }
-}
+};
 
 
 int main()
