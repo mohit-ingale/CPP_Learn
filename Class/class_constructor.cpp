@@ -19,13 +19,22 @@ class carrotlabz
             cout << "ID = " << id << endl
                  << "Name = " << name << endl;
         }
+
+        void display();
 };
+
+void carrotlabz::display()
+{
+    cout <<"Display" << endl
+         <<"ID = " << id << endl
+         <<"Name = " << name << endl;
+}
 
 int main()
 {
     carrotlabz c1(12,"Mohit"), c2;
     c1.printdata();
-    c2.printdata();
+    c2.display();
 
     return 0;
 }
