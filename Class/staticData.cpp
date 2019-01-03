@@ -6,7 +6,7 @@ using namespace std;
 class switchCounter
 {
     private:
-        static int count;
+        static int count = 0;
     public:
         switchCounter()
         {
