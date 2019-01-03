@@ -6,9 +6,9 @@ class carrotlabz
 {
     private:
         int id;
-        char *name;
+        string name;
     public:
-        carrotlabz(int eid, char *ename):id(eid),name(ename)
+        carrotlabz(int eid, string ename):id(eid),name(ename)
         {}
         
         carrotlabz():id(-1),name("UnKnown")
