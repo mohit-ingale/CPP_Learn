@@ -18,6 +18,8 @@ class switchCounter
         }
 };
 
+int switchCounter::count = 0;
+
 int main()
 {
     switchCounter s1, s2, s3;
