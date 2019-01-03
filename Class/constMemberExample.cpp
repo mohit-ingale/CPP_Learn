@@ -12,7 +12,7 @@ class constExample
         constExample()
         {}
         int addFunction() const;
-        int swap(int & data1, int & data2) const
+        int swap(int & data1, int & data2) const;
 };
 
 int constExample::addFunction() const
