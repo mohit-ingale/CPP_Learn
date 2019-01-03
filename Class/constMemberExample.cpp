@@ -12,6 +12,7 @@ class constExample
         constExample()
         {}
         int addFunction() const;
+        int swap(int & data1, int & data2) const
 };
 
 int constExample::addFunction() const
@@ -21,11 +22,11 @@ int constExample::addFunction() const
     return sum;
 }
 
-int swap(int & data1, int & data2)
+int constExample::swap(int & data1, int & data2) const
 {
     int temp = data1;
     data1 = data2;
-    data2 = data1;
+    data2 = temp;
 }
 
 int main()
@@ -37,7 +38,7 @@ int main()
     cout <<"Before Swap" << endl;
     cout << val1 << endl;
     cout << val2 << endl;
-    swap(val1,val2);
+    c2.swap(val1,val2);
     cout <<"After Swap" << endl;
     cout << val1 << endl;
     cout << val2 << endl;
