@@ -12,7 +12,7 @@ class constExample
         constExample()
         {}
         int addFunction() const;
-        int swap(int & data1, int & data2) const;
+        int swap(int & dat1, int & dat2) const;
 };
 
 int constExample::addFunction() const
@@ -22,17 +22,19 @@ int constExample::addFunction() const
     return sum;
 }
 
-int constExample::swap(int & data1, int & data2) const
+int constExample::swap(int & dat1, int & dat2) const
 {
-    int temp = data1;
-    data1 = data2;
-    data2 = temp;
+    int temp = dat1;
+    dat1 = dat2;
+    dat2 = temp;
 }
 
 int main()
 {
-    constExample c1(10,5),c2(6,8),c3;
+    const constExample c1(10,5),c2(6,8),c3;
     int val1 =7, val2 = 9;
+    //const int val1 =7, val2 = 9;      
+    /*This we have to do if we are passing by reference explicitly make variable constant*/
     cout << c1.addFunction() << endl;
     cout << c2.addFunction() << endl;
     cout <<"Before Swap" << endl;
