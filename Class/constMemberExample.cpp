@@ -9,8 +9,8 @@ class constExample
     public:
         constExample(int d1, int d2): data1(d1),data2(d2)
         {}
-        constExample()
-        {}
+        /* constExample()
+        {} */
         int addFunction() const;
 };
 
@@ -23,7 +23,7 @@ int constExample::addFunction() const
 
 int main()
 {
-    constExample c1(10,5),c2(6,8);
+    constExample c1(10,5),c2(6,8),c3;
     cout << c1.addFunction() << endl;
     cout << c2.addFunction() << endl;
     return 0;
