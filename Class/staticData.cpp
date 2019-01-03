@@ -14,7 +14,10 @@ class switchCounter
         }
         void printCounter()
         {
+            int data;
+            data += 5;
             cout << "Counter  = " << count << endl;
+            cout << "Data  = " << data << endl;
         }
 };
 
