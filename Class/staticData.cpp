@@ -12,7 +12,11 @@ class switchCounter
         {
             count++;
         }
-        void printCounter()
+        /*
+            # Functions are static and only one instance is created for multiple objects
+            # Needs to be taken care in case of multithreading
+        */
+        void printCounter() 
         {
             int data;
             data += 5;
