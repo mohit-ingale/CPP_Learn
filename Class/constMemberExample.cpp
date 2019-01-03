@@ -24,7 +24,7 @@ int constExample::addFunction() const
 int main()
 {
     constExample c1(10,5),c2(6,8);
-    c1.addFunction();
-    c2.addFunction();
+    cout << c1.addFunction() << endl;
+    cout << c2.addFunction() << endl;
     return 0;
 }
