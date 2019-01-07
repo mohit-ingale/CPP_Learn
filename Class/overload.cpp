@@ -24,7 +24,7 @@ class HomeBrew
         void operator ++ ()
         {
 
-            str[i] = 'c';
+            str[i++] = 'c';
         }
 
         void display()
