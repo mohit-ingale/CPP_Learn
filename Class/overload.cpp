@@ -26,12 +26,23 @@ class HomeBrew
 
             str[i] = 'c';
         }
+
+        void display()
+        {
+            cout << str << endl;
+        }
 };
 int HomeBrew:: i = 0;
 int main()
 {
     char * ss = "Hello";
     HomeBrew h1 (*ss);
+    h1.display();
     ++h1;
+    h1.display();
+    ++h1;
+    h1.display();
+    ++h1;
+    h1.display();
     return 0;
 }
