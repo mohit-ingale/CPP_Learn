@@ -29,6 +29,6 @@ int HomeBrew:: i = 0;
 int main()
 {
     HomeBrew h1 = "Helllo";
-    h1++;
+    ++h1;
     return 0;
 }
