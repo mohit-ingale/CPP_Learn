@@ -15,8 +15,10 @@ class HomeBrew
         HomeBrew(char & iStr)
         {
             int i = 0;
-            while(iStr)
-                str[i++] = iStr++;
+            while(*(&iStr + i)){
+                str[i++] = *(&iStr + i);
+            }
+
             str[i] = '\0';
         }
         void operator ++ ()
