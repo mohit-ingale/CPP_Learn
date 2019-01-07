@@ -25,6 +25,7 @@ int constExample::addFunction() const
 int constExample::swap(int & dat1, int & dat2) const
 {
     int temp = dat1;
+    //data1 = temp;     Error expression must be modifiable value
     dat1 = dat2;
     dat2 = temp;
 }
