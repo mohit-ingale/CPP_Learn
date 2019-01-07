@@ -12,11 +12,11 @@ class HomeBrew
     public:
         HomeBrew()
         {}
-        HomeBrew(char * iStr)
+        HomeBrew(char & iStr)
         {
             int i = 0;
-            while(*iStr)
-                str[i++] = *iStr;
+            while(iStr)
+                str[i++] = iStr;
             str[i] = '\0';
         }
         void operator ++ ()
@@ -28,7 +28,8 @@ class HomeBrew
 int HomeBrew:: i = 0;
 int main()
 {
-    HomeBrew h1 = "Helllo";
+    char * ss = "Hello";
+    HomeBrew h1 (*ss);
     ++h1;
     return 0;
 }
