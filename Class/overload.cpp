@@ -16,7 +16,7 @@ class HomeBrew
         {
             int i = 0;
             while(iStr)
-                str[i++] = iStr;
+                str[i++] = iStr++;
             str[i] = '\0';
         }
         void operator ++ ()
