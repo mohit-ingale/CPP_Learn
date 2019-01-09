@@ -38,11 +38,11 @@ class Distance
 
 int main()
 {
-    Distance d1(5,12.0);
+    Distance d1(5,11.0);
     Distance d2;
     float mtr=0.0;
     d1.display();
-    d2 = static_cast<Distance>(4);
+    d2 = static_cast<Distance>(6);
     d2.display();
     mtr = d1;   //implicit casting using conversion operator
     cout << "D1 in mtr  = " << mtr << endl;
